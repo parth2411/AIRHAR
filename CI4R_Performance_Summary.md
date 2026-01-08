@@ -4,7 +4,6 @@
 
 Successfully validated RadMamba state space model on real-world radar micro-Doppler data (CI4R dataset), achieving **80.30% test accuracy** with only **47,865 parameters** - demonstrating efficient performance on actual radar signatures.
 
----
 
 ## Key Performance Metrics
 
@@ -25,7 +24,6 @@ Successfully validated RadMamba state space model on real-world radar micro-Dopp
 - **Average Time per Epoch**: 2.07 seconds
 - **Inference Ready**: Lightweight model suitable for edge deployment
 
----
 
 ## Training Progression Analysis
 
@@ -47,7 +45,6 @@ Successfully validated RadMamba state space model on real-world radar micro-Dopp
 - Test accuracy plateaued at ~74%
 - Model learned training data well but showed some overfitting
 
----
 
 ## Dataset Information
 
@@ -65,7 +62,6 @@ Successfully validated RadMamba state space model on real-world radar micro-Dopp
 - Grayscale intensity images
 - Fixed-size input: 224×224 pixels
 
----
 
 ## Model Architecture
 
@@ -94,8 +90,6 @@ Gradient Clipping: 200
 Total Epochs: 100
 ```
 
----
-
 ## Detailed Epoch-by-Epoch Performance
 
 ### Top 5 Best Epochs by Test Accuracy
@@ -114,7 +108,6 @@ Total Epochs: 100
 - Epochs 81-96: LR = 0.0002
 - Epochs 97-99: LR = 0.0001
 
----
 
 ## Key Insights for Pitch
 
@@ -143,7 +136,6 @@ Total Epochs: 100
 - Healthcare (fall detection, gait analysis)
 - Smart home automation
 
----
 
 ## Files and Artifacts
 
@@ -158,7 +150,6 @@ Total Epochs: 100
 - Processed Data: `./datasets/CI4R/ci4r_data.h5`
 - Configuration: `./datasets/CI4R/spec.json`
 
----
 
 ## Recommendations for Pitch
 
@@ -179,12 +170,11 @@ Total Epochs: 100
 - Evaluate inference speed and memory footprint
 - Test on embedded hardware (Raspberry Pi, Jetson Nano)
 
----
 
 ## Technical Specifications
 
 ### Hardware Used
-- Platform: MacOS (Darwin 24.6.0)
+- Platform: MacOS 
 - Accelerator: CPU (no GPU required)
 - Training Device: Apple Silicon compatible
 
@@ -193,8 +183,6 @@ Total Epochs: 100
 - Data Format: HDF5
 - Visualization: Spectrogram preprocessing via OpenCV
 - Optimization: AdamW with ReduceLROnPlateau scheduler
-
----
 
 ## Conclusion
 
