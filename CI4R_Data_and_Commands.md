@@ -29,8 +29,6 @@
 - **Input Size**: 224×224 (after preprocessing)
 - **Data Format**: HDF5 (.h5)
 
----
-
 ## Data Formats Available
 
 ### Format 1: MATLAB Files (.mat)
@@ -57,8 +55,6 @@
 - Preserves original complex signal information
 - Allows custom signal processing pipelines
 
----
-
 ### Format 2: PNG Spectrograms
 **Location**: `datasets/CI4R/Cross-frequency/Spectograms_77_24_Xethrue/activity_spectogram_77GHz/`
 
@@ -80,7 +76,6 @@
 - Pre-visualized data
 - Smaller file size
 
----
 
 ## Command Sequences
 
@@ -134,7 +129,6 @@ python3 animate_pipeline.py
 - 55 frames total (5 samples per class)
 - Shows: Raw signal → Spectrogram → RadMamba → Classification
 
----
 
 ### **Approach 2: Using PNG Spectrograms**
 
@@ -170,7 +164,6 @@ python3 animate_pipeline.py
 
 **Note**: Steps 2 and 3 are identical for both approaches since they operate on the same H5 format.
 
----
 
 ## Key Differences Between Approaches
 
@@ -184,7 +177,6 @@ python3 animate_pipeline.py
 | **Data Fidelity** | Original complex signal preserved | Visual representation only |
 | **Status** | ✅ Tested - 84.09% accuracy | ⚠️ Not tested yet |
 
----
 
 ## Understanding the Pipeline
 
@@ -215,8 +207,6 @@ python3 animate_pipeline.py
 - **Confidence**: Softmax probability score
 - **Evaluation**: Compared against ground truth label
 
----
-
 ## Performance Results
 
 ### Model Performance (Using .mat Approach)
@@ -240,7 +230,6 @@ python3 animate_pipeline.py
 - Walking on Toes
 - Scissors Gait
 
----
 
 ## Hyperparameters Explanation
 
@@ -257,7 +246,6 @@ python3 animate_pipeline.py
 - `d_state=4`: State space dimension (in config)
 - `dt_rank=0`: Delta rank for time step computation
 
----
 
 ## File Structure
 
@@ -286,7 +274,6 @@ AIRHAR/
 └── CI4R_Performance_Summary.md              # Detailed performance report
 ```
 
----
 
 ## Quick Start Guide
 
@@ -312,7 +299,6 @@ python3 animate_pipeline.py
 - `save/CI4R/classify/CL_S_0_M_RADMAMBA_*.pt` - Trained model
 - `visualization_results/pipeline_animation.gif` - Visual demo
 
----
 
 ## Troubleshooting
 
@@ -330,7 +316,6 @@ python3 animate_pipeline.py
 **Issue**: Animation generation fails
 - **Solution**: Ensure `radmamba_architecture.png` exists in the project root
 
----
 
 ## References
 
@@ -338,8 +323,6 @@ python3 animate_pipeline.py
 - **Model**: RadMamba - Radar-based Mamba with bidirectional SSM
 - **Paper**: [RadMamba Paper](https://arxiv.org/pdf/2504.12039)
 - **Framework**: PyTorch Lightning
-
----
 
 ## Notes
 
@@ -349,6 +332,5 @@ python3 animate_pipeline.py
 4. 84.09% accuracy represents strong performance on real radar data
 5. The visualization pipeline demonstrates the complete end-to-end process
 
----
 
 Last Updated: 2026-01-08
