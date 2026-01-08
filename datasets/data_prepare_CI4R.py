@@ -163,5 +163,5 @@ if __name__ == "__main__":
     # parser = argparse.ArgumentParser(description='Prepare the Alabma dataset.')
     # parser.add_argument('--path', type=str, help='The base directory path for the dataset')
     # args = parser.parse_args()
-    path = "/home/yizhuo/PythonProject/AIHAR/data/CI4R7"
+    path = "datasets/CI4R/Cross-frequency/77ghz"
     prepare_alabma_dataset(path)

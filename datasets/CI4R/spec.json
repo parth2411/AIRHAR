@@ -9,7 +9,7 @@
         
         "eval_val": 0,
         "eval_test": 1,
-        "accelerator": "cuda",
+        "accelerator": "cpu",
         "devices": 0,
         "re_level": "soft",
 

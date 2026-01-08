@@ -79,6 +79,8 @@ env/
 .env/
 .venv/
 
+/datasets/CI4R/
+
 # Jupyter Notebook
 .ipynb_checkpoints
 
@@ -96,7 +98,7 @@ env/
 
 #Log file
 *.csv
-*.png
+
 
 /.vscode/
 *.h5
